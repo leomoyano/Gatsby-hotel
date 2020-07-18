@@ -22,6 +22,7 @@ const Header = () => {
         color: #fff;
         text-align: center;
         `}>Hotel Gatsby</h1>
+        <Navegacion />
 
             </div>
         </header>
