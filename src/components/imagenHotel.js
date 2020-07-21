@@ -17,6 +17,21 @@ const TextoImagen = styled.div`
     flex: 1;
     align-items: center;
     justify-content: center;
+    font-family: 'PT Sans', sans-serif;
+
+    h1 {
+      font-size: 4rem;
+      margin: 0%;
+
+      
+    @media (min-width: 992px) {
+      font-size: 5.8rem;
+    }
+    }
+
+    p {
+      font-size: 2.6rem;
+    }
 ` 
 
 const ImagenHotel = () => {
