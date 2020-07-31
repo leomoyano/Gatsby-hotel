@@ -1,5 +1,6 @@
 import React from 'react'
 import {graphql, useStaticQuery} from 'gatsby';
+import Image from 'gatsby-image';
 
 const ContenidoInicio = () => {
 
@@ -18,11 +19,17 @@ query {
     }
   }`)
 
-  console.log(Informacion);
+  console.log(Informacion.allDatoCmsPagina.nodes[0]);
+
+  const {titulo, contenido, imagen} = Informacion.allDatoCmsPagina.nodes[0];
 
     return (
         <>
-            <h2>Titulo de pagina</h2>
+            <h2>{titulo}</h2>
+            <div>
+              <p>{contenido}</p>
+              <Image fluid={imagen.fluid} />
+            </div>
         </>
     )
 }
