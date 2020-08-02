@@ -15,7 +15,7 @@ const Header = () => {
         @media (min-width: 768px) {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-around;
         }
         `}>
                 <h1 css={css`
