@@ -4,11 +4,11 @@ import ImagenHotel from "../components/imagenHotel";
 import ContenidoInicio from "../components/contenidoInicio";
 
 
-const IndexPage = () => (
+const Index = () => (
   <Layout>
     <ImagenHotel />
     <ContenidoInicio />
   </Layout>
 )
 
-export default IndexPage
+export default Index

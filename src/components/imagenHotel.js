@@ -17,7 +17,6 @@ const TextoImagen = styled.div`
     flex: 1;
     align-items: center;
     justify-content: center;
-    font-family: 'PT Sans', sans-serif;
 
     h1 {
       font-size: 4rem;

@@ -23,7 +23,7 @@ export const Layout = (props) => {
                  h1,h2 {
                      font-family: 'Roboto', serif;
                  }  
-                 h3 {
+                 h3,p {
                     font-family: 'PT Sans', sans-serif;
                  }
                  ul {

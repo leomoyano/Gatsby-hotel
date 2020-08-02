@@ -8,13 +8,13 @@ import { css } from '@emotion/core';
 const TextoInicio = styled.div`
   padding-top: 4rem;
   max-width: 95%;
-  margin: auto; 
+  margin: auto;
 
   @media (min-width: 768px) {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
-`;
+  `;
 
 const ContenidoInicio = () => {
 
