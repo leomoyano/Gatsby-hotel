@@ -1,12 +1,17 @@
-import React from 'react'
+import React from 'react';
+import Image from 'gatsby-image';
 
-const HabitacionPreview = (habitacion) => {
+const HabitacionPreview = ({ habitacion }) => {
 
-    const {titulo, contenido, slug, imagen} = habitacion;
+    const { titulo, contenido, slug, imagen } = habitacion;
 
     return (
         <div>
-            <div>{titulo}</div>
+            <Image fluid={imagen.fluid} />
+            <div>
+                <h3>{titulo}</h3>
+                <p>{contenido}</p>
+            </div>
         </div>
     )
 }
