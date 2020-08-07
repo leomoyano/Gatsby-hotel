@@ -25,7 +25,7 @@ const useHabitaciones = () => {
         id: habitacion.id,
         contenido: habitacion.contenido,
         imagen: habitacion.imagen,
-        titulo: habitacion.titulo
+        slug: habitacion.slug
     }))
 
 }
