@@ -1,14 +1,25 @@
-import React from 'react'
-import { css } from '@emotion/core';
-import Navegacion from './nav';
+import React from "react"
+import { css } from "@emotion/core"
+import styled from "@emotion/styled"
+import { Link } from "gatsby"
+import Navegacion from "./nav"
+
+const EnlaceHome = styled(Link)`
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+`
 
 const Header = () => {
-    return (
-        <header css={css`
+  return (
+    <header
+      css={css`
         background-color: #333;
         padding: 1rem;
-        `}>
-            <div css={css`
+      `}
+    >
+      <div
+        css={css`
         max-width: 1200px
         margin: 0 auto;
 
@@ -17,16 +28,17 @@ const Header = () => {
             align-items: center;
             justify-content: space-around;
         }
-        `}>
-                <h1 css={css`
-        color: #fff;
-        text-align: center;
-        `}>Hotel Gatsby</h1>
-        <Navegacion />
+        `}
+      >
+        <EnlaceHome
+            to='/'
+        ><h1>Hotel Gatsby</h1>
+        </EnlaceHome>
 
-            </div>
-        </header>
-    )
+        <Navegacion />
+      </div>
+    </header>
+  )
 }
 
-export default Header;
+export default Header

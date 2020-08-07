@@ -8,6 +8,7 @@ const Boton = styled(Link)`
   margin-top: 2rem;
   padding: 1rem;
   background-color: rgba(44, 62, 80, 0.85);
+  font-family: 'PT Sans', sans-serif;
   width: 100%;
   color: #fff;
   display: block;
@@ -41,7 +42,6 @@ const HabitacionPreview = ({ habitacion }) => {
           {titulo}
         </h3>
         <p>{contenido}</p>
-        <Boton to={slug}>Test</Boton>
         <Boton to={slug}>Ver Habitacion</Boton>
       </div>
     </div>
