@@ -36,7 +36,7 @@ const Footer = ({ title }) => {
         >
           <Navegacion />
           <EnlaceHome to='/'>
-            <h1>Hotel Gatsby</h1>
+            <h2>Hotel Gatsby</h2>
           </EnlaceHome>
         </div>
       </footer>
